@@ -13,12 +13,12 @@
 }
 .page-container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 5fr 5fr;
 }
 .nav-section {
   background-color: #2dd4bf;
   grid-column: 1/2;
-  grid-row: 1/3;
+  grid-row: 1/4;
   padding: 1rem;
   display: grid;
   grid-template-rows: 3rem repeat(auto-fill, minmax(200px, 1fr));
@@ -31,6 +31,13 @@
   background-color: #e6eceb;
   display: grid;
   grid-template-rows: 25% minmax(75%, fitcontent);
+}
+
+.footer {
+  grid-column: 2/-1;
+  height: 2.5rem;
+  width: 100%;
+  background-color: #e6eceb;
 }
 
 .dashboard > img {
